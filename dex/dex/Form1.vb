@@ -1,10 +1,5 @@
 ﻿Public Class Form1
-    Private Sub GrassToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Form3.Show()
-        Form2.Close()
-
-    End Sub
-
+    Dim records(50) As String
     Private Sub FireToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Form2.Show()
         Form3.Close()
@@ -45,5 +40,16 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         OpenFileDialog1.ShowDialog()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If IO.File.Exists("data.txt") Then
+
+
+            Dim inFile As New IO.StreamReader("data.txt")
+            records(0) = inFile.ReadLine
+            records(1) = inFile.ReadLine
+            inFile.Close()
+        End If
     End Sub
 End Class
