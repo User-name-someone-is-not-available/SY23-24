@@ -48,8 +48,21 @@
 
             Dim inFile As New IO.StreamReader("data.txt")
             records(0) = inFile.ReadLine
-            records(1) = inFile.ReadLine
+
             inFile.Close()
+            showrecord(0)
+        End If
+    End Sub
+    Public Sub showrecord(index As Integer)
+        Dim fields() As String
+        fields = records(index).Split("|")
+        f1.Text = fields(0)
+        f2.Text = fields(1)
+        f3.Text = fields(2)
+        f4.Text = fields(3)
+        f5.Text = fields(4)
+        If IO.File.Exists(fields(5)) Then
+            PictureBox1.Load(fields(5))
         End If
     End Sub
 End Class
