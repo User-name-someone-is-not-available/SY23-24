@@ -1,5 +1,7 @@
 ﻿Public Class Form1
     Dim records(50) As String
+    Dim count As Integer
+    Dim current As Integer
     Private Sub FireToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Form2.Show()
         Form3.Close()
@@ -44,25 +46,48 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If IO.File.Exists("data.txt") Then
-
-
             Dim inFile As New IO.StreamReader("data.txt")
-            records(0) = inFile.ReadLine
-
+            While Not inFile.EndOfStream
+                records(count) = inFile.ReadLine
+                count = count + 1
+            End While
             inFile.Close()
             showrecord(0)
         End If
     End Sub
     Public Sub showrecord(index As Integer)
         Dim fields() As String
-        fields = records(index).Split("|")
+        If records(index) <> Nothing Then
+            fields = records(index).Split("|")
         f1.Text = fields(0)
         f2.Text = fields(1)
         f3.Text = fields(2)
         f4.Text = fields(3)
         f5.Text = fields(4)
-        If IO.File.Exists(fields(5)) Then
-            PictureBox1.Load(fields(5))
+            If IO.File.Exists(fields(5)) Then
+                PictureBox1.Load(fields(5))
+            End If
         End If
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles b4.Click
+        current = count - 1
+        showrecord(current)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles b3.Click
+        If current < count - 1 Then current = current + 1
+
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles b2.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles b1.Click
+        current = 0
+        showrecord(current)
+
     End Sub
 End Class
