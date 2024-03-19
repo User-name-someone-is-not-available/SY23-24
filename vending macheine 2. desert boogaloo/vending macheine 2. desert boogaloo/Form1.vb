@@ -1,21 +1,21 @@
 ﻿Public Class Form1
-    Dim WithEvents cs As New coinslot
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Dim WithEvents cs As New CoinSlot
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button1.Click
         cs.insertnickel()
         Label1.Text = cs.total.ToString("c2")
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button4.Click
         cs.insertdime()
         Label1.Text = cs.total.ToString("c2")
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button3.Click
         cs.insertquarter()
         Label1.Text = cs.total.ToString("c2")
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button2.Click
         cs.insertdollar()
         Label1.Text = cs.total.ToString("c2")
     End Sub
@@ -85,11 +85,23 @@
 
 
         End Select
-        Productcontrol1.buy()
+
 
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        cs.insertonehundo()
+        Label1.Text = cs.total.ToString("c2")
+    End Sub
+    Private Sub cs_buyevent(p As Image) Handles cs.buyevent
+        PictureBox5.Image = p
+    End Sub
+
+    Private Sub Productcontrol15_Load(sender As Object, e As EventArgs) Handles Productcontrol15.Load
 
     End Sub
 End Class
