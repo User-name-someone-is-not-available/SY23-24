@@ -1,6 +1,20 @@
 oh se
 can you seee
 by the dawn dre we lie
+>_<
+._.
+,_,
+^_^
+'__'
+:|
+:/
+:\
+:[
+:]
+;]
+oh se
+can you seee
+by the dawn dre we lie
 
 
 
