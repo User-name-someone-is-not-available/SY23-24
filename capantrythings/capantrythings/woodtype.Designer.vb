@@ -31,6 +31,7 @@ Partial Class woodtype
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -48,7 +49,7 @@ Partial Class woodtype
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 30)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Previous"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -57,7 +58,7 @@ Partial Class woodtype
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Next"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label1
@@ -90,6 +91,7 @@ Partial Class woodtype
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Pine", "Maple", "Ash", "Butternut", "White Oak", "Red Oak"})
         Me.ComboBox1.Location = New System.Drawing.Point(12, 96)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
@@ -98,6 +100,7 @@ Partial Class woodtype
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Cherry", "Hard Maple", "Mahogany", "Teak", "Walnut"})
         Me.ComboBox2.Location = New System.Drawing.Point(303, 96)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(151, 28)
@@ -106,16 +109,27 @@ Partial Class woodtype
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Rosewood", "Hollywood", "Agarwood", "Brazilian Rosewood"})
         Me.ComboBox3.Location = New System.Drawing.Point(637, 96)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
         Me.ComboBox3.TabIndex = 8
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(335, 167)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(94, 29)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'woodtype
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
@@ -141,4 +155,5 @@ Partial Class woodtype
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Button3 As Button
 End Class
