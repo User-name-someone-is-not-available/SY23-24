@@ -31,7 +31,8 @@ Partial Class woodtype
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -115,21 +116,30 @@ Partial Class woodtype
         Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
         Me.ComboBox3.TabIndex = 8
         '
-        'Button3
+        'Label4
         '
-        Me.Button3.Location = New System.Drawing.Point(335, 167)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(303, 197)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(82, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Wood Cost"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(282, 229)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox2.TabIndex = 10
         '
         'woodtype
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
@@ -155,5 +165,6 @@ Partial Class woodtype
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox2 As TextBox
 End Class
