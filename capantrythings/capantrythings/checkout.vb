@@ -3,6 +3,6 @@
         Me.Hide()
         Dim WC As New woodtype
         WC.ShowDialog()
-
     End Sub
+
 End Class
