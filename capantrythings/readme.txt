@@ -12,14 +12,6 @@ by the dawn dre we lie
 :[
 :]
 ;]
-oh se
-can you seee
-by the dawn dre we lie
-
-
-
-
-
 Bye bye miss american pie
 chevy to the levee but the levee was dry
 good ol' boys drinkin whiskey and rye
