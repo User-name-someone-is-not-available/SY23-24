@@ -1,4 +1,4 @@
-﻿Imports System.Net
+Imports System.Net
 Imports System.Security.Policy
 
 Public Class woodtype
@@ -24,7 +24,7 @@ Public Class woodtype
         If ComboBox1.Text = "Pine" Then
             WC = 12.99
         End If
-        If ComboBox1.Text = "White Oak" Then
+        If ComboBox1.Text = "Red Oak" Then
             WC = 9.99
         End If
         If ComboBox1.Text = "Butternut" Then
