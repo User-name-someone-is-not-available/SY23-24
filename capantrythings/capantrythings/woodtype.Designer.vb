@@ -119,7 +119,7 @@ Partial Class woodtype
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(303, 197)
+        Me.Label4.Location = New System.Drawing.Point(333, 186)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(82, 20)
         Me.Label4.TabIndex = 9
@@ -127,7 +127,7 @@ Partial Class woodtype
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(282, 229)
+        Me.TextBox2.Location = New System.Drawing.Point(310, 209)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(125, 27)

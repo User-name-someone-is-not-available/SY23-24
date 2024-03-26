@@ -13,6 +13,7 @@ Public Class woodtype
         Me.Hide()
         Dim f3 As New checkout
         f3.ShowDialog()
+
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged

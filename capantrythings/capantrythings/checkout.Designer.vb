@@ -35,6 +35,7 @@ Partial Class checkout
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -144,11 +145,21 @@ Partial Class checkout
         Me.TextBox5.Size = New System.Drawing.Size(153, 27)
         Me.TextBox5.TabIndex = 12
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(41, 83)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(128, 54)
+        Me.Button2.TabIndex = 13
+        Me.Button2.Text = "update checkout"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'checkout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -182,4 +193,5 @@ Partial Class checkout
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Button2 As Button
 End Class
