@@ -2,7 +2,7 @@
 Imports System.Security.Policy
 
 Public Class woodtype
-    Dim WC As Decimal
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Dim f1 As New Form1
@@ -21,10 +21,10 @@ Public Class woodtype
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.Text = "Pine" Or "Maple" Then
+        If ComboBox1.Text = "Pine" Then
             WC = 12.99
         End If
-        If ComboBox1.Text = "White Oak" Or "Red Oak" Then
+        If ComboBox1.Text = "White Oak" Then
             WC = 9.99
         End If
         If ComboBox1.Text = "Butternut" Then
