@@ -9,5 +9,6 @@
         Me.Hide()
         Dim f3 As New checkout
         f3.ShowDialog()
+
     End Sub
 End Class
