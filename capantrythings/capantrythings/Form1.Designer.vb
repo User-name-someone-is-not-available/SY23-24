@@ -63,7 +63,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(34, 185)
+        Me.RadioButton2.Location = New System.Drawing.Point(34, 98)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(56, 24)
         Me.RadioButton2.TabIndex = 5
@@ -74,7 +74,7 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(34, 98)
+        Me.RadioButton3.Location = New System.Drawing.Point(34, 142)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(68, 24)
         Me.RadioButton3.TabIndex = 6
@@ -85,7 +85,7 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(34, 144)
+        Me.RadioButton4.Location = New System.Drawing.Point(36, 186)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(66, 24)
         Me.RadioButton4.TabIndex = 7
