@@ -3,4 +3,5 @@
 
     Public IC As Decimal
 
+    Public WO As Decimal
 End Module
