@@ -35,19 +35,20 @@
         TextBox3.Text = wt.ComboBox1.Text
         TextBox4.Text = WC
         TextBox5.Text = C * (WC + IC)
-        If IC = 1 Then
+        TextBox6.Text = WC + IC
+        If IC = 5 Then
             TextBox1.Text = "Bowl"
         End If
-        If IC = 2 Then
+        If IC = 250 Then
             TextBox1.Text = "Bed"
         End If
-        If IC = 3 Then
+        If IC = 100 Then
             TextBox1.Text = "Table"
         End If
-        If IC = 4 Then
+        If IC = 50 Then
             TextBox1.Text = "Chair"
         End If
-        If IC = 5 Then
+        If IC = 1 Then
             TextBox1.Text = "Cup"
         End If
         If WO = 1 Then
