@@ -36,6 +36,8 @@ Partial Class checkout
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -78,6 +80,7 @@ Partial Class checkout
         '
         Me.TextBox1.Location = New System.Drawing.Point(368, 83)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(153, 27)
         Me.TextBox1.TabIndex = 4
         '
@@ -94,13 +97,14 @@ Partial Class checkout
         '
         Me.TextBox2.Location = New System.Drawing.Point(368, 132)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(153, 27)
         Me.TextBox2.TabIndex = 6
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(250, 179)
+        Me.Label5.Location = New System.Drawing.Point(250, 223)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(76, 20)
         Me.Label5.TabIndex = 7
@@ -108,40 +112,43 @@ Partial Class checkout
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(368, 179)
+        Me.TextBox3.Location = New System.Drawing.Point(368, 223)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(153, 27)
         Me.TextBox3.TabIndex = 8
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(368, 224)
+        Me.TextBox4.Location = New System.Drawing.Point(368, 268)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(153, 27)
         Me.TextBox4.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(250, 227)
+        Me.Label6.Location = New System.Drawing.Point(250, 271)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(36, 20)
+        Me.Label6.Size = New System.Drawing.Size(74, 20)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "cost"
+        Me.Label6.Text = "woodcost"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(250, 271)
+        Me.Label7.Location = New System.Drawing.Point(250, 315)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 20)
+        Me.Label7.Size = New System.Drawing.Size(71, 20)
         Me.Label7.TabIndex = 11
-        Me.Label7.Text = "cost/item"
+        Me.Label7.Text = "total cost"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(368, 271)
+        Me.TextBox5.Location = New System.Drawing.Point(368, 315)
         Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(153, 27)
         Me.TextBox5.TabIndex = 12
         '
@@ -154,11 +161,29 @@ Partial Class checkout
         Me.Button2.Text = "update checkout"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(251, 180)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(70, 20)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "item cost"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(368, 177)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(153, 27)
+        Me.TextBox6.TabIndex = 15
+        '
         'checkout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label7)
@@ -194,4 +219,6 @@ Partial Class checkout
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TextBox6 As TextBox
 End Class
