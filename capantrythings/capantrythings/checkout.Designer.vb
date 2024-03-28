@@ -97,7 +97,6 @@ Partial Class checkout
         '
         Me.TextBox2.Location = New System.Drawing.Point(368, 132)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(153, 27)
         Me.TextBox2.TabIndex = 6
         '
@@ -174,6 +173,7 @@ Partial Class checkout
         '
         Me.TextBox6.Location = New System.Drawing.Point(368, 177)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(153, 27)
         Me.TextBox6.TabIndex = 15
         '
