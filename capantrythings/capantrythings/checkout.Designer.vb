@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class checkout
     Inherits System.Windows.Forms.Form
 
@@ -174,7 +174,6 @@ Partial Class checkout
         Me.TextBox6.Location = New System.Drawing.Point(368, 177)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
-        Me.TextBox6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox6.Size = New System.Drawing.Size(153, 27)
         Me.TextBox6.TabIndex = 15
         '
