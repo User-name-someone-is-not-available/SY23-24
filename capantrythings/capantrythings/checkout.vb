@@ -8,6 +8,9 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim wt As New woodtype
+        If TextBox2.Text = "1" Then
+            C = 1
+        End If
         If TextBox2.Text = "2" Then
             C = 2
         End If
